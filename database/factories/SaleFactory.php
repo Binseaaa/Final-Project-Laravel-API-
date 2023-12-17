@@ -21,7 +21,7 @@ class SaleFactory extends Factory
         return [
             'customer_id' => fake()->randomElement(Customer::pluck('id')),
             'date'  => fake() -> dateTime(),
-            'is_credit' => fake() -> randomDigit(),
+            'is_credit' => fake() -> boolean(),
             'user_id' => fake()->randomElement(User::pluck('id')),
         ];
     }

@@ -21,6 +21,7 @@ class MerchandiseFactory extends Factory
             'description' =>fake() -> sentence(3),
             'retail_price'=>fake()->numberBetween(10,100000),
             'whole_sale_price'=>fake()->numberBetween(10,100000),
+            'whole_sale_qty'=>fake()->randomDigit(),
             'qty_stock'=>fake()->randomDigit()
         ];
     }

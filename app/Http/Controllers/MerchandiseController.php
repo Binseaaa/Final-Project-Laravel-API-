@@ -53,8 +53,8 @@ class MerchandiseController extends Controller
             'brand'            => 'string',
             'description'      => 'string',
             'retail_price'     => 'numeric',
-            'whole_sale_qty'   => 'integer',
             'whole_sale_price' => 'numeric',
+            'whole_sale_qty'   => 'integer',
             'qty_stock'        => 'integer'
         ]);
 
