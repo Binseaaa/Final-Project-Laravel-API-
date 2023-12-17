@@ -31,6 +31,7 @@ class MerchandiseController extends Controller
             'description'      => 'required|string',
             'retail_price'     => 'required|numeric',
             'whole_sale_price' => 'required|numeric',
+            'whole_sale_qty'   => 'required|integer',
             'qty_stock'        => 'required|integer'
         ]);
 
@@ -52,6 +53,7 @@ class MerchandiseController extends Controller
             'brand'            => 'string',
             'description'      => 'string',
             'retail_price'     => 'numeric',
+            'whole_sale_qty'   => 'integer',
             'whole_sale_price' => 'numeric',
             'qty_stock'        => 'integer'
         ]);
@@ -75,7 +77,7 @@ class MerchandiseController extends Controller
 
         return response()->json([
             'status'    => 'OK',
-            'message'   => 'Account with the ID# ' . $details . ' has been deleted.'
+            'message'   => 'Merchandise with ID# ' . $details . ' has been deleted.'
         ]);
     }
 }

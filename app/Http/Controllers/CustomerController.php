@@ -72,7 +72,7 @@ class CustomerController extends Controller
 
         return response()->json([
             'status'    => 'OK',
-            'message'   => 'Account with the ID# ' . $details . ' has been deleted.'
+            'message'   => 'Customer with the ID# ' . $details . ' has been deleted.'
         ]);
     }
 }

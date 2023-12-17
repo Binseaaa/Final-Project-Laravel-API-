@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('customer_id')->unsigned();
             $table->foreign('customer_id')->references('id')->on('customers');
             $table->timestamp('date');
-            $table->tinyInteger('is_credit');
+            $table->tinyInteger('is_credit',1);
             $table->foreignId('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

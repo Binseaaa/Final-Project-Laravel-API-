@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('description', 255);
             $table->decimal('retail_price', 8,2);
             $table->decimal('whole_sale_price', 8,2);
+            $table->integer('whole_sale_qty')->unsigned();
             $table->integer('qty_stock');
             $table->timestamps();
         });

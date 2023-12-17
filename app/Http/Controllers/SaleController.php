@@ -35,7 +35,7 @@ class SaleController extends Controller
 
         return response()->json([
             'status'    => 'OK',
-            'message'   => 'Sale ' . $sale->company_name . ' has been created.',
+            'message'   => 'Sale with ID#' . $sale->id . ' has been created.',
             'data'      => $sale
         ]);
     }
